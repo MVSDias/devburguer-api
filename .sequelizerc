@@ -1,0 +1,7 @@
+const { resolve } = require('node:path')
+
+module.exports = { //mapeando as pastas p sequelize
+    config: resolve(__dirname, 'src', 'config', 'database.js'), // onde está a configuração do banco
+    'models-path': resolve(__dirname, 'src', 'app', 'models'), // onde ficam os modelos p banco
+    'migrations-path': resolve(__dirname, 'src', 'database', 'migrations')// onde ficam as migrations
+}
