@@ -9,7 +9,7 @@ class App {
   constructor() {
     this.app = express();
     this.middlewares();
-    this.app.use(cors('http://localhost:5173'));
+    this.app.use(cors());
     this.routes();
     
   }
